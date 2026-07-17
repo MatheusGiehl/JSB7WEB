@@ -13,6 +13,12 @@ document.body.appendChild(h3)
 //adionando uma lista
 
 let lista = ['Item 1', 'Item 2', 'Item 3']
+
+
+function renderizarLista(lista){
+    let ul = document.querySelector('ul')
+    ul.innerHTML = ''
+}
 let ul = document.createElement('ul')
 for (let i = 0; i < lista.length; i++) {
     let li = document.createElement('li')
@@ -20,3 +26,4 @@ for (let i = 0; i < lista.length; i++) {
     ul.appendChild(li)
 }
 document.body.appendChild(ul)
+
